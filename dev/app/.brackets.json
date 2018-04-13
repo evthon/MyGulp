@@ -1,0 +1,21 @@
+{
+    "sass.enabled": "false",
+    "sass.compiler": "libsass",
+    "path": {
+        "scss/*.lib.scss": {
+            "sass.enabled": false
+        },
+        "scss/*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "brackets-git.gitPath": "git",
+            "brackets-snippets.defaultSnippetDirectory": "C:/Users/evgen/AppData/Roaming/Brackets/snippets/"
+        }
+    }
+}
