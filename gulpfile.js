@@ -121,31 +121,30 @@ gulp.task("js", function () {
 });
 
 gulp.task("js-libs", function () {
-    AppFiles.forEach(function (file) {
-        var file_chil, data, start_index, end_index, arr_libs;
-        
-        file == "index"? file_chil = "main" : file_chil = file;
-        
-        data = fs.readFileSync("app/js/" + "main.js");
-        data? data = data.toString() : data = "";
-        start_index = data.indexOf("//-require ");
-        end_index = data.indexOf(" require-//");
-        arr_libs;
-        if (~start_index && ~end_index) {
-            arr_libs = data.slice(start_index + 11, end_index).replace(/,\s/g, ',').split(",");
-            for (i = 0; i < arr_libs.length; i++) {
-                arr_libs[i] = "vendors/" + arr_libs[i] + ".js";
-            }
-            arr_libs.push("app/js/" + file_chil + ".js");
-            console.log(arr_libs);
-            gulp.src(arr_libs)
-                .pipe(concat(file_chil + ".js"))
-                .pipe(gulp.dest("app/js/"));
+
+    file = process.argv[3].slice(1);
+
+    let data, start_index, end_index, arr_libs;
+
+    data = fs.readFileSync("app/js/" + file);
+    data? data = data.toString() : data = "";
+    start_index = data.indexOf("//-require ");
+    end_index = data.indexOf(" require-//");
+    if (~start_index && ~end_index) {
+        arr_libs = data.slice(start_index + 11, end_index).replace(/,\s/g, ',').split(",");
+        for (i = 0; i < arr_libs.length; i++) {
+            arr_libs[i] = "vendors/" + arr_libs[i] + ".js";
         }
-    });
+        arr_libs.push("app/js/" + file);
+        console.log(arr_libs);
+        gulp.src(arr_libs)
+            .pipe(concat(file))
+            .pipe(gulp.dest("app/js/"));
+    }
     setTimeout(function () {
         gulp.start("js");
     }, 100);
+
 });
 
 gulp.task("img", function () {
@@ -185,7 +184,7 @@ gulp.task("fonts", function () {
 gulp.task("watcher", function () {
     watch("app/*.html","html");
     watch("app/css/*.css","css");
-    watch("app/js/*.js","js-libs");
+    // watch("app/js/*.js","js-libs");
     watch("vendors/**/*.{js, css}","mov-libs");
     watch("app/img/*.{jpeg, png, svg, jpg}","img");
     watch("app/fonts/**/*{ttf,otf}","fonts");

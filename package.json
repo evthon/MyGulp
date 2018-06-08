@@ -1,7 +1,7 @@
 {
-  "name": "gulp-project",
-  "version": "1.0.2",
-  "description": "Gulp-File fo front-end develop",
+  "name": "My-Gulp",
+  "version": "1.1.2",
+  "description": "Gulp-File project for WebShtorm",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
     "url": "https://github.com/evthon/MyGulp"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
     "bower": "^1.8.4",
     "browser-sync": "^2.23.6",
     "event-stream": "^3.3.4",
