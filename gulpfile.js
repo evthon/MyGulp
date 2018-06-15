@@ -16,10 +16,11 @@ var gulp           = require("gulp"),
     concat         = require("gulp-concat"),
     imagemin       = require("gulp-imagemin"),
     image_resize   = require("gulp-image-resize"),
-    watch          = require("gulp-chokidar")(gulp);
+    watch          = require("gulp-chokidar")(gulp),
+	optimist       = require("optimist").argv;
 
 var AppFiles       = [],
-    polyfills      = true,
+    polyfills      = optimist.polyfills,
     imageprerols   = {act: false, w: 100, h: 100};
 
 gulp.task("StartServer", function () {
@@ -77,23 +78,35 @@ gulp.task("html", ["readdir"], function () {
     AppFiles.forEach(function (file) {
         return gulp.src("app/" + file + ".html")
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest("../"));
+        .pipe(gulp.dest("../" + optimist.html));
     });
 });
 
 gulp.task("css", function () {
-    AppFiles.forEach(function (file) {
-        var file_chil;
-        
-        file == "index"? file_chil = "main" : file_chil = file;
-        return gulp.src("app/css/" + file_chil + ".css")
-        .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
-        .pipe(uncss({
-            html: ["app/" + file + ".html"]
-        }))
-        .pipe(cssnano())
-        .pipe(gulp.dest("../css/"));
-    });
+    if (optimist.uncss == true) {
+	    AppFiles.forEach(function (file) {
+		    var file_chil;
+
+		    file == "index"? file_chil = "main" : file_chil = file;
+		    return gulp.src("app/css/" + file_chil + ".css")
+			    .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
+			    .pipe(uncss({
+				    html: ["app/" + file + ".html"]
+			    }))
+			    .pipe(cssnano())
+			    .pipe(gulp.dest("../css/"));
+	    });
+    } else {
+	    AppFiles.forEach(function (file) {
+		    var file_chil;
+
+		    file == "index"? file_chil = "main" : file_chil = file;
+		    return gulp.src("app/css/" + file_chil + ".css")
+			    .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
+			    .pipe(cssnano())
+			    .pipe(gulp.dest("../" + optimist.css +  "/"));
+	    });
+    }
 });
 
 gulp.task("js", function () {
@@ -114,7 +127,7 @@ gulp.task("js", function () {
                 .pipe(order(["polyfills.js", "app/js/" + file_chil + ".js"]))
                 .pipe(concat(file_chil + ".js"))
                 .pipe(uglify())
-                .pipe(gulp.dest("../js/"));
+                .pipe(gulp.dest("../" + optimist.js + "/"));
                 break;
         }
     });
@@ -122,7 +135,7 @@ gulp.task("js", function () {
 
 gulp.task("js-libs", function () {
 
-    file = process.argv[3].slice(1);
+    file = optimist.jsfile;
 
     let data, start_index, end_index, arr_libs;
 
@@ -163,11 +176,11 @@ gulp.task("img", function () {
                                 crop: true,
                                 upscale: false
                             }))
-                            .pipe(gulp.dest("../img/pre-rolls/"))
+                            .pipe(gulp.dest("../" + optimist.img + "/pre-rolls/"))
                     case false:
                         imfile
                             .pipe(imagemin())
-                            .pipe(gulp.dest("../img/"));
+                            .pipe(gulp.dest("../" + optimist.img + "/"));
                         break;
                 }
             });
@@ -178,7 +191,7 @@ gulp.task("img", function () {
 
 gulp.task("fonts", function () {
     return gulp.src("app/fonts/**/*.{ttf,otf}")
-    .pipe(gulp.dest("../fonts/"));
+    .pipe(gulp.dest("../" + optimist.fonts + "/"));
 });
 
 gulp.task("watcher", function () {

@@ -33,6 +33,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-uncss": "^1.0.6",
+    "optimist": "^0.6.1",
     "readline-sync": "^1.4.9",
     "ttf2eot": "^2.0.0",
     "uncss": "^0.16.2"
