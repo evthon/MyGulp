@@ -60,16 +60,16 @@ gulp.task("mov-libs", function () {
                 fs.copyFile("vendors/" + file + "/dist/" + file + ".css", "app/scss/" + file + ".lib.scss", function (err) {
                     if (err) {
                         var er = err.errno;
-                    };
+                    }
                     if (er == -4058) {
                         fs.copyFile("vendors/" + file + "/dist/css/" + file + ".css", "app/scss/" + file + ".lib.scss", function (err) {
                             if (err) {
                                 console.log("Not css in " + file + " libs");
-                            };
+                            }
                         });
                     }
                 });
-            };
+            }
         });
     });
 });
@@ -88,20 +88,20 @@ gulp.task("css", function () {
 		    var file_chil;
 
 		    file == "index"? file_chil = "main" : file_chil = file;
-		    return gulp.src("app/css/" + file_chil + ".css")
+		    return gulp.src("app/" + optimist.css + "/" + file_chil + ".css")
 			    .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
 			    .pipe(uncss({
 				    html: ["app/" + file + ".html"]
 			    }))
 			    .pipe(cssnano())
-			    .pipe(gulp.dest("../css/"));
+			    .pipe(gulp.dest("../" + optimist.css + "/"));
 	    });
     } else {
 	    AppFiles.forEach(function (file) {
-		    var file_chil;
+		    let file_chil;
 
 		    file == "index"? file_chil = "main" : file_chil = file;
-		    return gulp.src("app/css/" + file_chil + ".css")
+		    return gulp.src("app/" + optimist.css + "/" + file_chil + ".css")
 			    .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
 			    .pipe(cssnano())
 			    .pipe(gulp.dest("../" + optimist.css +  "/"));
@@ -116,12 +116,12 @@ gulp.task("js", function () {
         
         switch (polyfills) {
             case false:
-                return gulp.src("app/js/" + file_chil + ".js")
+                return gulp.src("app/" + optimist.js + "/" + file_chil + ".js")
                 .pipe(uglify())
-                .pipe(gulp.dest("../js/"));
+                .pipe(gulp.dest("../" + optimist.js + "/"));
                 break;
             case true:
-                var fl = gulp.src("app/js/" + file_chil + ".js");
+                var fl = gulp.src("app/" + optimist.js + "/" + file_chil + ".js");
                 var pol = fl.pipe(autopolyfiller("polyfills.js"));
                 return merge(fl, pol)
                 .pipe(order(["polyfills.js", "app/js/" + file_chil + ".js"]))
@@ -133,38 +133,11 @@ gulp.task("js", function () {
     });
 });
 
-gulp.task("js-libs", function () {
-
-    file = optimist.jsfile;
-
-    let data, start_index, end_index, arr_libs;
-
-    data = fs.readFileSync("app/js/" + file);
-    data? data = data.toString() : data = "";
-    start_index = data.indexOf("//-require ");
-    end_index = data.indexOf(" require-//");
-    if (~start_index && ~end_index) {
-        arr_libs = data.slice(start_index + 11, end_index).replace(/,\s/g, ',').split(",");
-        for (i = 0; i < arr_libs.length; i++) {
-            arr_libs[i] = "vendors/" + arr_libs[i] + ".js";
-        }
-        arr_libs.push("app/js/" + file);
-        console.log(arr_libs);
-        gulp.src(arr_libs)
-            .pipe(concat(file))
-            .pipe(gulp.dest("app/js/"));
-    }
-    setTimeout(function () {
-        gulp.start("js");
-    }, 100);
-
-});
-
 gulp.task("img", function () {
-    fs.readdir("app/img/", function (err, files) {
+    fs.readdir("app/" + optimist.img + "/", function (err, files) {
         if (files) {
             files.forEach(function (file) {
-                var imfile = gulp.src("app/img/" + file);
+                var imfile = gulp.src("app/" + optimist.img + "/" + file);
                 var imp = imageprerols.act;
                 if (~file.indexOf(".svg")) imp = false;
                 switch (imp) {
@@ -190,7 +163,7 @@ gulp.task("img", function () {
 });
 
 gulp.task("fonts", function () {
-    return gulp.src("app/fonts/**/*.{ttf,otf}")
+    return gulp.src("app/" + optimist.fonts + "/**/*.{ttf,otf}")
     .pipe(gulp.dest("../" + optimist.fonts + "/"));
 });
 
@@ -201,6 +174,33 @@ gulp.task("watcher", function () {
     watch("vendors/**/*.{js, css}","mov-libs");
     watch("app/img/*.{jpeg, png, svg, jpg}","img");
     watch("app/fonts/**/*{ttf,otf}","fonts");
+});
+
+gulp.task("js-libs", function () {
+
+	file = optimist.jsfile;
+
+	let data, start_index, end_index, arr_libs;
+
+	data = fs.readFileSync("app/" + optimist.js + "/" + file);
+	data? data = data.toString() : data = "";
+	start_index = data.indexOf("//-require ");
+	end_index = data.indexOf(" require-//");
+	if (~start_index && ~end_index) {
+		arr_libs = data.slice(start_index + 11, end_index).replace(/,\s/g, ',').split(",");
+		for (i = 0; i < arr_libs.length; i++) {
+			arr_libs[i] = "vendors/" + arr_libs[i] + ".js";
+		}
+		arr_libs.push("app/" + optimist.js + "/" + file);
+		console.log(arr_libs);
+		gulp.src(arr_libs)
+			.pipe(concat(file))
+			.pipe(gulp.dest("app/" + optimist.js + "/"));
+	}
+	setTimeout(function () {
+		gulp.start("js");
+	}, 100);
+
 });
 
 gulp.task("default", ["html", "css", "js", "mov-libs", "img", "fonts", "watcher"]);

@@ -42,7 +42,7 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="js-libs --jsfile=$FileNameWithoutAllExtensions$.js" />
+      <option name="arguments" value="js-libs --jsfile=$FileNameWithoutAllExtensions$.js --js=&quot;js&quot;" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
