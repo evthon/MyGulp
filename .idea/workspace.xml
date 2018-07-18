@@ -1,130 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d3b156f-0a81-46bf-b063-75e76cc3bb66" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/JSLIBS.js" afterDir="false" />
+    <list default="true" id="9d3b156f-0a81-46bf-b063-75e76cc3bb66" name="Default" comment="Fixed uncss">
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/boolean_double.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/boolean_single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/default_hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/default_singles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/divide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count_wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/nonopt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/reflect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/usage-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/xup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/example/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/dash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/default_bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/dotted.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/long.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/num.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/parse_modified.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_/argv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_/bin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/dash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/parse_modified.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/usage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/whitespace.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/class-utils/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/make-iterator/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/make-iterator/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/make-iterator/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/make-iterator/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-copy/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/snapdragon/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/static-extend/node_modules/kind-of/package.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -140,17 +63,7 @@
     <favorites_list name="MyGulp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="197" column="23" lean-forward="true" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -269,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,10 +206,10 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -370,7 +283,9 @@
       <workItem from="1528408286614" duration="7139000" />
       <workItem from="1528415456129" duration="4331000" />
       <workItem from="1529103727722" duration="1967000" />
-      <workItem from="1529158653553" duration="1521000" />
+      <workItem from="1529158653553" duration="2200000" />
+      <workItem from="1529164082577" duration="19000" />
+      <workItem from="1531871613034" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed uncss">
       <created>1529105632773</created>
@@ -379,11 +294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529105632773</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed uncss">
+      <created>1529160252102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529160252102</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14958000" />
+    <option name="totallyTimeSpent" value="16204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,48 +318,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1930" height="1090" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32985386" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50026387" side_tool="true" weight="0.6565762" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32985386" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3559499" />
       <window_info id="npm" order="3" sideWeight="0.50406504" side_tool="true" weight="0.22427441" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49973616" weight="0.45093945" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.45302713" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.45302713" />
       <window_info id="Gulp" order="0" sideWeight="0.41231734" side_tool="true" weight="0.22391991" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.22391991" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.2260274" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32672232" />
       <window_info id="Structure" order="4" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
       <window_info id="Favorites" order="1" sideWeight="0.46033403" side_tool="true" weight="0.22391991" />
       <window_info anchor="bottom" id="Debug" order="7" weight="1.0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="Gulp" order="0" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
+      <window_info id="Gulp" order="0" sideWeight="0.41231734" side_tool="true" weight="0.22391991" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info id="npm" order="3" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32425067" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49830508" visible="true" weight="0.22181243" />
+      <window_info id="npm" order="3" sideWeight="0.50406504" side_tool="true" weight="0.22427441" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.22391991" />
       <window_info id="Structure" order="4" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32985386" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49973616" weight="0.45093945" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32672232" />
       <window_info anchor="bottom" id="Debug" order="7" weight="1.0" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32731378" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.45302713" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50026387" side_tool="true" weight="0.6565762" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.32985386" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32731378" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Favorites" order="1" sideWeight="0.46033403" side_tool="true" weight="0.22391991" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,6 +372,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixed uncss" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4531">
+          <caret line="197" column="23" lean-forward="true" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -485,17 +413,11 @@
     <entry file="file://$PROJECT_DIR$/app/js/main.js" />
     <entry file="file://$PROJECT_DIR$/app/js/main.es6" />
     <entry file="file://$PROJECT_DIR$/app/index.html" />
-    <entry file="file://$PROJECT_DIR$/JSLIBS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JSLIBS.js" />
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="197" column="23" lean-forward="true" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+        <state relative-caret-position="1255">
+          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
         </state>
       </provider>
     </entry>
