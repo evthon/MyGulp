@@ -23,6 +23,45 @@ var AppFiles       = [],
     polyfills      = optimist.polyfills,
     imageprerols   = {act: false, w: 100, h: 100};
 
+gulp.task("CreateTree", function () {
+	fs.mkdir("app", function (err) {
+		if (err && err.code !== "EEXIST") {
+			console.log(err);
+		} else {
+			fs.mkdir("app/css", function (err) {
+				if (err && err.code !== "EEXIST") {
+					console.log(err);
+				}
+			});
+			fs.mkdir("app/fonts", function (err) {
+				if (err && err.code !== "EEXIST") {
+					console.log(err);
+				}
+			});
+			fs.mkdir("app/img", function (err) {
+				if (err && err.code !== "EEXIST") {
+					console.log(err);
+				}
+			});
+			fs.mkdir("app/js", function (err) {
+				if (err && err.code !== "EEXIST") {
+					console.log(err);
+				}
+			});
+			fs.mkdir("app/scss", function (err) {
+				if (err && err.code !== "EEXIST") {
+					console.log(err);
+				}
+			});
+		}
+	});
+	fs.mkdir("vendors", function (err) {
+		if (err && err.code !== "EEXIST") {
+			console.log(err);
+		}
+	});
+});
+
 gulp.task("StartServer", function () {
     browserSync({
         server: {

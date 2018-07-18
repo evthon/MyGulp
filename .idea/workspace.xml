@@ -1,53 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d3b156f-0a81-46bf-b063-75e76cc3bb66" name="Default" comment="Fixed uncss">
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/bool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/boolean_double.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/boolean_single.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/default_hash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/default_singles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/divide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count_options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/line_count_wrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/nonopt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/reflect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/short.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/string.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/usage-options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/example/xup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/example/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/readme.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/bool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/dash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/default_bool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/dotted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/long.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/num.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/parse_modified.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/short.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/node_modules/minimist/test/whitespace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/readme.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_/argv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/_/bin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/dash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/parse_modified.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/short.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/usage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/optimist/test/whitespace.js" afterDir="false" />
+    <list default="true" id="9d3b156f-0a81-46bf-b063-75e76cc3bb66" name="Default" comment="Add task CreateTree&#10;Add task Start">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +22,26 @@
     <favorites_list name="MyGulp" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,12 +74,19 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/JSLIBS.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -163,9 +148,6 @@
     <scope name="Main" pattern="!file[dev]:app/scss/*.lib.scss" />
     <scope name="Main2" pattern="file[dev]:*.scss" />
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
@@ -190,11 +172,6 @@
               <item name="MyGulp" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyGulp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyGulp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGulp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +186,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -228,8 +206,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gulp.js.default">
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/dev/app/index.html" />
+  <component name="RunManager" selected="npm.Start">
+    <configuration name="CommonGulp" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments>--uncss=false</arguments>
+      <envs />
+    </configuration>
     <configuration name="StartServer" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -248,24 +235,32 @@
       <arguments />
       <envs />
     </configuration>
-    <configuration name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>default</task>
-      </tasks>
-      <arguments>--uncss=false</arguments>
+    <configuration name="Start" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="install" />
+      <node-interpreter value="project" />
       <envs />
+      <method>
+        <option name="GulpBeforeRunTask" enabled="true">
+          <node-interpreter>project</node-interpreter>
+          <node-options />
+          <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+          <tasks>
+            <task>CreateTree</task>
+          </tasks>
+          <arguments />
+          <envs />
+        </option>
+      </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="Gulp.js.default" />
+      <item itemvalue="npm.Start" />
+      <item itemvalue="Gulp.js.CommonGulp" />
       <item itemvalue="Gulp.js.StartServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.default" />
+        <item itemvalue="Gulp.js.CommonGulp" />
         <item itemvalue="Gulp.js.StartServer" />
       </list>
     </recent_temporary>
@@ -285,7 +280,7 @@
       <workItem from="1529103727722" duration="1967000" />
       <workItem from="1529158653553" duration="2200000" />
       <workItem from="1529164082577" duration="19000" />
-      <workItem from="1531871613034" duration="548000" />
+      <workItem from="1531871613034" duration="4973000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed uncss">
       <created>1529105632773</created>
@@ -301,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529160252102</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed uncss">
+      <created>1531872513339</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531872513339</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16204000" />
+    <option name="totallyTimeSpent" value="20629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,10 +325,11 @@
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50026387" side_tool="true" weight="0.6565762" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3559499" />
       <window_info id="npm" order="3" sideWeight="0.50406504" side_tool="true" weight="0.22427441" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49973616" weight="0.45093945" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.45302713" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49973616" visible="true" weight="0.45093945" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.48851773" />
       <window_info id="Gulp" order="0" sideWeight="0.41231734" side_tool="true" weight="0.22391991" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.2260274" />
+      <window_info anchor="bottom" id="TypeScript" weight="0.32985386" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.22813489" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32672232" />
       <window_info id="Structure" order="4" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
@@ -346,16 +349,16 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.22391991" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.539666" visible="true" weight="0.2260274" />
       <window_info id="Structure" order="4" sideWeight="0.5016949" side_tool="true" weight="0.2540633" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32985386" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49973616" weight="0.45093945" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32672232" />
       <window_info anchor="bottom" id="Debug" order="7" weight="1.0" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.45302713" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.45302713" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50026387" side_tool="true" weight="0.6565762" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3559499" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Favorites" order="1" sideWeight="0.46033403" side_tool="true" weight="0.22391991" />
@@ -369,7 +372,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed uncss" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed uncss" />
+    <MESSAGE value="Delete node_modules folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete node_modules folder" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
@@ -416,8 +420,15 @@
     <entry file="file://$PROJECT_DIR$/JSLIBS.js" />
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1255">
-          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+        <state relative-caret-position="1012">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
