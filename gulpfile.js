@@ -1,4 +1,4 @@
-const gulp           = require("gulp"),
+const gulp         = require("gulp"),
 	browserSync    = require("browser-sync"),
 	uglify         = require("gulp-uglifyjs"),
 	cssnano        = require("gulp-cssnano"),
@@ -12,12 +12,24 @@ const gulp           = require("gulp"),
 	concat         = require("gulp-concat"),
 	imagemin       = require("gulp-imagemin"),
 	image_resize   = require("gulp-image-resize"),
-	watch          = require("gulp-chokidar")(gulp),
-	optimist       = require("optimist").argv;
+	watch          = require("gulp-chokidar")(gulp);
 
 let AppFiles       = [],
-	polyfills      = optimist.polyfills,
+	polyfills      = process.env.polyfills,
+	uncsstest      = process.env.uncss,
 	imageprerols   = {act: false, w: 100, h: 100};
+
+if (polyfills === "false") {
+	polyfills = false;
+} else if (polyfills === "true") {
+	polyfills = true;
+}
+
+if (uncsstest === "false") {
+	uncsstest = false;
+} else if (uncsstest === "true") {
+	uncsstest = true;
+}
 
 gulp.task("CreateTree", function () {
 	fs.mkdir("app", function (err) {
@@ -62,7 +74,7 @@ gulp.task("CreateTree", function () {
 gulp.task("StartServer", function () {
 	browserSync({
 		server: {
-			baseDir: "../"
+			baseDir: "../" + process.env.html
 		},
 		notify: false
 	});
@@ -78,69 +90,69 @@ gulp.task("readdir", function () {
 });
 
 gulp.task("mov-libs", function () {
-	fs.readdir("vendors", function (err, files) {
-		files.forEach(function (file) {
-			if (!(~file.indexOf(".js") || ~file.indexOf(".css"))) {
-				fs.copyFile("vendors/" + file + "/dist/" + file + ".js", "vendors/" + file + ".js", function (err) {
-					if (err) {
-						let er = err.errno;
-					};
-					if (er == -4058) {
-						fs.copyFile("vendors/" + file + "/dist/js/" + file + ".js", "vendors/" + file + ".js", function (err) {
-							if (err) {
-								console.log("Not js in " + file + " libs");
-							};
-						});
-					}
-				});
-				fs.copyFile("vendors/" + file + "/dist/" + file + ".css", "app/scss/" + file + ".lib.scss", function (err) {
-					if (err) {
-						let er = err.errno;
-					}
-					if (er == -4058) {
-						fs.copyFile("vendors/" + file + "/dist/css/" + file + ".css", "app/scss/" + file + ".lib.scss", function (err) {
-							if (err) {
-								console.log("Not css in " + file + " libs");
-							}
-						});
-					}
-				});
-			}
-		});
+	fs.readdirSync("vendors").forEach(function (file) {
+		if (!(~file.indexOf(".js") || ~file.indexOf(".css"))) {
+			fs.copyFile("vendors/" + file + "/dist/" + file + ".js", "vendors/" + file + ".js", function (err) {
+				let er;
+				err? er=err.errno : er = false;
+				if (er === -4058) {
+					fs.copyFile("vendors/" + file + "/dist/js/" + file + ".js", "vendors/" + file + ".js", function (err) {
+						if (err) {
+							console.log("Not js in " + file + " libs");
+						}
+					});
+				}
+			});
+			fs.copyFile("vendors/" + file + "/dist/" + file + ".css", "app/scss/_" + file + ".scss", function (err) {
+				let er;
+				err? er=err.errno : er = false;
+				if (er === -4058) {
+					fs.copyFile("vendors/" + file + "/dist/css/" + file + ".css", "app/scss/_" + file + ".scss", function (err) {
+						if (err) {
+							console.log("Not css in " + file + " libs");
+						}
+					});
+				}
+			});
+		}
 	});
+	 return gulp.src("./vendors/*.js")
+		.pipe(concat("_libs.js"))
+		.pipe(uglify())
+		.pipe(gulp.dest("./app/js/"));
 });
 
 gulp.task("html", ["readdir"], function () {
 	AppFiles.forEach(function (file) {
-		return gulp.src("app/" + file + ".html")
+		return gulp.src("app/" + process.env.html + file + ".html")
 			.pipe(htmlmin({collapseWhitespace: true}))
-			.pipe(gulp.dest("../" + optimist.html));
+			.pipe(gulp.dest("../" + process.env.html));
 	});
 });
 
 gulp.task("css", function () {
-	if (optimist.uncss == true) {
+	if (uncsstest === true) {
 		AppFiles.forEach(function (file) {
 			let file_chil;
 
-			file == "index"? file_chil = "main" : file_chil = file;
-			return gulp.src("app/" + optimist.css + "/" + file_chil + ".css")
+			file === "index"? file_chil = "main" : file_chil = file;
+			return gulp.src("app/css/" + file_chil + ".css")
 				.pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
 				.pipe(uncss({
 					html: ["app/" + file + ".html"]
 				}))
 				.pipe(cssnano())
-				.pipe(gulp.dest("../" + optimist.css + "/"));
+				.pipe(gulp.dest("../" + process.env.css + "/"));
 		});
 	} else {
 		AppFiles.forEach(function (file) {
 			let file_chil;
 
-			file == "index"? file_chil = "main" : file_chil = file;
-			return gulp.src("app/" + optimist.css + "/" + file_chil + ".css")
+			file === "index"? file_chil = "main" : file_chil = file;
+			return gulp.src("app/css/" + file_chil + ".css")
 				.pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
 				.pipe(cssnano())
-				.pipe(gulp.dest("../" + optimist.css +  "/"));
+				.pipe(gulp.dest("../" + process.env.css +  "/"));
 		});
 	}
 });
@@ -148,32 +160,41 @@ gulp.task("css", function () {
 gulp.task("js", function () {
 	AppFiles.forEach(function (file) {
 		let file_chil;
-		file == "index"? file_chil = "main" : file_chil = file;
+		file === "index"? file_chil = "main" : file_chil = file;
 
 		switch (polyfills) {
 			case false:
-				return gulp.src("app/" + optimist.js + "/" + file_chil + ".js")
+				return gulp.src("app/js/" + file_chil + ".js")
 					.pipe(uglify())
-					.pipe(gulp.dest("../" + optimist.js + "/"));
+					.pipe(gulp.dest("../" + process.env.js + "/"));
 				break;
 			case true:
-				let fl = gulp.src("app/" + optimist.js + "/" + file_chil + ".js");
+				let fl = gulp.src("app/js/" + file_chil + ".js");
 				let pol = fl.pipe(autopolyfiller("polyfills.js"));
 				return merge(fl, pol)
 					.pipe(order(["polyfills.js", "app/js/" + file_chil + ".js"]))
 					.pipe(concat(file_chil + ".js"))
 					.pipe(uglify())
-					.pipe(gulp.dest("../" + optimist.js + "/"));
+					.pipe(gulp.dest("../" + process.env.js + "/"));
 				break;
+		}
+	});
+	fs.copyFile("./app/js/_libs.js", "../" + process.env.js + "/_libs.js", function (err) {
+		let er;
+		err? er=err.errno : er = false;
+		if (er === -4058) {
+			fs.mkdir("../" + process.env.js, function (err) {
+				fs.copyFile("./app/js/_libs.js", "../" + process.env.js + "/_libs.js", function (err) {});
+			})
 		}
 	});
 });
 
 gulp.task("img", function () {
-	fs.readdir("app/" + optimist.img + "/", function (err, files) {
+	fs.readdir("app/img", function (err, files) {
 		if (files) {
 			files.forEach(function (file) {
-				let imfile = gulp.src("app/" + optimist.img + "/" + file);
+				let imfile = gulp.src("app/img/" + file);
 				let imp = imageprerols.act;
 				if (~file.indexOf(".svg")) imp = false;
 				switch (imp) {
@@ -185,11 +206,11 @@ gulp.task("img", function () {
 								crop: true,
 								upscale: false
 							}))
-							.pipe(gulp.dest("../" + optimist.img + "/pre-rolls/"))
+							.pipe(gulp.dest("../" + process.env.img + "/pre-rolls/"))
 					case false:
 						imfile
 							.pipe(imagemin())
-							.pipe(gulp.dest("../" + optimist.img + "/"));
+							.pipe(gulp.dest("../" + process.env.img + "/"));
 						break;
 				}
 			});
@@ -199,44 +220,19 @@ gulp.task("img", function () {
 });
 
 gulp.task("fonts", function () {
-	return gulp.src("app/" + optimist.fonts + "/**/*.{ttf,otf}")
-		.pipe(gulp.dest("../" + optimist.fonts + "/"));
+	return gulp.src("app/fonts/**/*.{ttf,otf}")
+		.pipe(gulp.dest("../" + process.env.fonts + "/"));
 });
 
 gulp.task("watcher", function () {
-	watch("app/*.html","html");
+	watch("app/" + process.env.html + "/*.html","html");
 	watch("app/css/*.css","css");
-	// watch("app/js/*.js","js-libs");
 	watch("vendors/**/*.{js, css}","mov-libs");
 	watch("app/img/*.{jpeg, png, svg, jpg}","img");
 	watch("app/fonts/**/*{ttf,otf}","fonts");
+	watch("app/js/*.js", "js");
 });
 
-gulp.task("js-libs", function () {
 
-	file = optimist.jsfile;
 
-	let data, start_index, end_index, arr_libs;
-
-	data = fs.readFileSync("app/" + optimist.js + "/" + file);
-	data? data = data.toString() : data = "";
-	start_index = data.indexOf("//-require ");
-	end_index = data.indexOf(" require-//");
-	if (~start_index && ~end_index) {
-		arr_libs = data.slice(start_index + 11, end_index).replace(/,\s/g, ',').split(",");
-		for (i = 0; i < arr_libs.length; i++) {
-			arr_libs[i] = "vendors/" + arr_libs[i] + ".js";
-		}
-		arr_libs.push("app/" + optimist.js + "/" + file);
-		console.log(arr_libs);
-		gulp.src(arr_libs)
-			.pipe(concat(file))
-			.pipe(gulp.dest("app/" + optimist.js + "/"));
-	}
-	setTimeout(function () {
-		gulp.start("js");
-	}, 100);
-
-});
-
-gulp.task("default", ["CreateTree", "html", "css", "js", "mov-libs", "img", "fonts", "watcher"]);
+gulp.task("default", ["CreateTree", "html", "css", "mov-libs", "js", "img", "fonts", "watcher"]);
